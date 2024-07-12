@@ -3,7 +3,7 @@
 ## Парсинг Мосбиржи
 
 Задача:
-Реализовать асинхронное получение данных по ссылке: https://iss.moex.com/iss/index.xml
+Реализовать асинхронное получение данных по ссылке: https://iss.moex.com/iss/history/engines/stock/markets/shares/securities/MOEX.xml
 
 Для http запросов использовать библиотеку httpx https://pypi.org/project/httpx/
 
