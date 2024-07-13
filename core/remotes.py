@@ -53,7 +53,7 @@ class BaseClient:
             1. Создаем
             2. ждем done
             3. идем по всем в done (может быть несколько так-как ошибочные могут упасть сразу же)
-            4. Если не упал, то отменяем остальные
+            4. Если не упал хотя бы 1, то отменяем остальные
                 Иначе пункт 2
         """
         pending = {asyncio.create_task(self._fetch_single()) for _ in range(self._settings.count_duplicate_request)}
