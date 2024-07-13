@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     request_interval: int
     log_level: str
 
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", env_nested_delimiter="__")
+    model_config = SettingsConfigDict(env_file=[".env", "example.env"], env_file_encoding="utf-8", env_nested_delimiter="__")
 
 
 SETTINGS = Settings()  # type: ignore
